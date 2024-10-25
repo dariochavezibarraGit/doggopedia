@@ -1,0 +1,26 @@
+{
+  "name": "doggopedia",
+  "version": "1.0.0",
+  "description": "the best encyclopedia for viewing awesome dogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dariochavezibarraGit/doggopedia.git"
+  },
+  "keywords": [
+    "dogs"
+  ],
+  "author": "Dario Chavez Ibarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dariochavezibarraGit/doggopedia/issues"
+  },
+  "homepage": "https://github.com/dariochavezibarraGit/doggopedia#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}

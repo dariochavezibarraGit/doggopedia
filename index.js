@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-const port = 3000
+const dogRouter = require('./src/routes/dogRoutes');
 
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-})
+app.use('/breeds', dogRouter);
+
+const port = 3000
 
 app.listen(port, () => {
     console.log(`Server Initialized. Listening Port ${ port }`)

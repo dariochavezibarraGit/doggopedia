@@ -2,10 +2,10 @@
   "name": "doggopedia",
   "version": "1.0.0",
   "description": "the best encyclopedia for viewing awesome dogs",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/dariochavezibarraGit/doggopedia#readme",
   "dependencies": {
-    "axios": "^1.7.7"
+    "ajax": "^0.0.4",
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "nodemon": "^3.1.7"
   }
 }

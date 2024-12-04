@@ -17,3 +17,12 @@ exports.getImages = async() => {
         throw new Error('Failed to fetch bone');
     }
 }
+
+exports.getFacts = async() => {
+    try {
+        const response = await axios.get('https://dogapi.dog/api/v2/facts');
+        return response.data;
+    } catch {
+        throw new Error('Failed to fetch bone');
+    }
+}

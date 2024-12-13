@@ -14,9 +14,8 @@ router.get('/', async (req, res) => {
    }
 });
 
+router.get('/dogs/images/:breed', dogController.getImagesByBreed); // when ':' is added after a word, this means that the value of, in this case, 'breed', is susceptible to change...
 
-router.get('/dogs/images', dogController.getImages); // this line calls 'dogController.js' to see if it can call the api to receive the solicited information...
-router.get('/dogs/breeds', dogController.getBreeds);
-router.get('/dogs/facts', dogController.getFacts);
+router.get('/dogs/facts', dogController.getFacts); // this line calls 'dogController.js' to see if it can call the api to receive the solicited information...
 
 module.exports = router;

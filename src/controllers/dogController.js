@@ -21,13 +21,15 @@ exports.getBreeds = async (req, res) => {
     }
 };
 
+exports.getImagesByBreed = async(req, res) => {
+    const { breed } = req.params; // this line of code is the same as writing 'const breed = req.params.breed', which is a way of saying 'deconstruct the received url'...
 
-exports.getImages = async(req, res) => {
     try {
-        const imageData = await dogService.getImages();
+        const imageData = await dogService.getImagesByBreed(breed);
         res.status(200).json(imageData);
-    } catch (error) {
-        res.status(500).json({ message: 'Error fetching images' });
+    }
+    catch (error) {
+        res.status(500).json({ message: 'Error fetching images by breeds' });
     }
 }
 
